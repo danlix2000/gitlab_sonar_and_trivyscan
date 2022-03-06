@@ -13,7 +13,7 @@ core-sonar_codequality:
     paths:
       - .sonar/cache
    script:
-      # SONAR_HOST and SONARQUBE_TOKEN shoud configure on GITLAB CI Environment variables
+      # SONAR_HOST and SONARQUBE_TOKEN sholud configure on GITLAB CI Environment variables
       - sonar-scanner -Dsonar.host.url=${SONAR_HOST} -Dsonar.login=${SONARQUBE_TOKEN} -Dsonar.projectVersion=$CI_PIPELINE_ID -Dsonar.qualitygate.wait=true -Dsonar.projectKey=$SONARPROJECT_NAME -Dsonar.projectName=$SONARPROJECT_NAME
    allow_failure: true
    only:
