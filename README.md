@@ -1,6 +1,4 @@
-# gitlab_sonar_and_trivyscan
-
-Gitlab CI pipeline for sonar scanner and docker vulnerability scan using trivy.
+# Gitlab CI pipeline for sonar scanner and docker vulnerability scan using trivy.
 
 - SONAR_HOST and SONARQUBE_TOKEN should configure on GITLAB CI Environment variables
 
