@@ -1,0 +1,7 @@
+stages:
+  - sonar-scan
+  - docker-vulnerability-scan
+
+include:
+  - local: .gitlab/ci/sonar-docker-scan.gitlab-ci.yml
+
